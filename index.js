@@ -18,6 +18,7 @@ function getRandomInt(min, max) {
 
 function generateCartItem(itemName) {
   return {
+//why isn't this itemName: item ???
     itemName:itemName,
     itemPrice:getRandomInt(1, 100)
   }
