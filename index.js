@@ -18,7 +18,8 @@ function getRandomInt(min, max) {
 
 function generateCartItem(itemName) {
   return {
-//why isn't this itemName: item - ???
+//"item" gets passed through as itemName to the value.
+//but why isn't the key also updated?
     itemName:itemName,
     itemPrice:getRandomInt(1, 100)
   }
