@@ -10,7 +10,7 @@ function setCart(c) {
   return cart;
 }
 
-//GENERATE and RANDOM INT Helper functions
+//HELPERS - GENERATE and RANDOM INT
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
