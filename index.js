@@ -89,6 +89,8 @@ function removeFromCart(itemName) {
   return itemToRemove ? removeItemFromCart(itemToRemove) : notify()
 }
 
+//PLACEORDER
+
 function placeOrder(cardNumber) {
   if (arguments[0] == undefined) {
     return "Sorry, we don't have a credit card on file for you."
