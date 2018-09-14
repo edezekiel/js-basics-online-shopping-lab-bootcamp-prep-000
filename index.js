@@ -32,10 +32,6 @@ function addToCart(item) {
 
 // VIEW function and HELPER
 
-function viewCart() {
-  return getCart().length === 0 ? "Your shopping cart is empty." : generateCartDescription()
-}
-
 function generateCartDescription() {
   var cartDescription = 'In your cart, you have '
   if ( getCart().length >= 1 ) {
@@ -50,6 +46,10 @@ function generateCartDescription() {
   }
 
   return `${cartDescription}.`
+}
+
+function viewCart() {
+  return getCart().length === 0 ? "Your shopping cart is empty." : generateCartDescription()
 }
 
 //TOTAL function and HElPER
